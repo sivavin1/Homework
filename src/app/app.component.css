@@ -2,14 +2,14 @@
   display: grid;
   grid-template-columns: 10% 90%;
   grid-template-rows: 4em auto 3em;
-  gap: 0.5em;
+  /* gap: 0.1em; */
   grid-template-areas:
       "navigation   header"
       "navigation  main"
       "navigation   footer"
   ;
   height: 100vh;
-  width: 99vw;
+  width: 99.9vw;
 }
 
 .header {
@@ -24,7 +24,7 @@
   font-size: 2rem;
   color: orange;
   padding: 1em;
-  background-color: #fff;
+  background-color: rgb(14, 93, 184);
 }
 
 .main {
