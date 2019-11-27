@@ -6,8 +6,12 @@
     margin-right: 1.5em;
 }
 
+body{
+  background-color: aquamarine;
+}
+
 .ui.items>.item {
-  border: 1px solid rgba(255, 255, 255, 0.0);
+  border: 1px solid rgba(135, 221, 210, 0);
   border-radius: 5px;
 }
 
