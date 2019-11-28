@@ -11805,6 +11805,7 @@ ol.ui.horizontal.list li:before {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+
 }
 .ui.form .inline.fields .field {
   margin: 0;

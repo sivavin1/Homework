@@ -4,7 +4,7 @@
   grid-template-rows: 4em auto 3em;
   /* gap: 0.1em; */
   grid-template-areas:
-      "navigation   header"
+      "navigation   fheader"
       "navigation  main"
       "navigation   footer"
   ;
@@ -13,10 +13,12 @@
 }
 
 .header {
-  grid-area: header;
+  grid-area: fheader;
   font-size: 2rem;
   color: orange;
-  padding: 1em;
+  justify-items: end;
+  padding: 0.3em;
+  /*float: right;*/
 }
 
 .navigation {
@@ -44,11 +46,11 @@
 }
 
 
-.header span:first-child {
+.fheader span:first-child {
   font-weight: 600;
 }
 
-.header span:last-child {
+.fheader span:last-child {
   font-style: italic;
   font-weight: 100;
 }
