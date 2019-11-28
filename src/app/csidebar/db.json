@@ -1,0 +1,20 @@
+{
+  "users":
+  [
+    {"username":"ciredell8","password":"rHQ2t1b","displayName":"Conrade Iredell","age":66,"gender":"Male","birthday":"2019-09-12","profileImage":"https://randomuser.me/api/portraits/women/65.jpg"},
+    {"username":"mwithnall9","password":"mXaXM3P","displayName":"Melodee Withnall","age":26,"gender":"Female","birthday":"2019-03-21","profileImage":"https://randomuser.me/api/portraits/women/65.jpg"}
+  ],
+  "products":
+  [
+    {"id":1,"name":"Pancetta","price":42,"count":10,"image":"https://picsum.photos/id/1/200/200"},
+    {"id":2,"name":"Coffee Beans - Chocolate","price":12,"count":16,"image":"https://picsum.photos/id/2/200/200"},
+    {"id":3,"name":"Glucose","price":34,"count":6,"image":"https://picsum.photos/id/3/200/200"},
+    {"id":4,"name":"Sobe - Cranberry Grapefruit","price":20,"count":4,"image":"https://picsum.photos/id/4/200/200"},
+    {"id":5,"name":"Thyme - Lemon, Fresh","price":18,"count":85,"image":"https://picsum.photos/id/5/200/200"},
+    {"id":6,"name":"Sesame Seed Black","price":90,"count":53,"image":"https://picsum.photos/id/6/200/200"},
+    {"id":7,"name":"Juice - Clam, 46 Oz","price":37,"count":10,"image":"https://picsum.photos/id/7/200/200"},
+    {"id":8,"name":"Juice - Grape, White","price":12,"count":77,"image":"https://picsum.photos/id/8/200/200"},
+    {"id":9,"name":"Cheese - Havarti, Roasted Garlic","price":3,"count":43,"image":"https://picsum.photos/id/9/200/200"},
+    {"id":10,"name":"Beef - Rib Eye Aaa","price":4,"count":60,"image":"https://picsum.photos/id/10/200/200"}
+  ]
+}
