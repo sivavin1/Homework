@@ -7855,6 +7855,8 @@ img.ui.bordered.image {
 .ui.label:first-child {
   margin-left: 0;
 }
+
+
 .ui.label:last-child {
   margin-right: 0;
 }
