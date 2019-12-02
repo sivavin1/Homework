@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { User } from '../user';
+import { UserServiceService } from '../user-service.service';
 
 @Component({
   selector: 'app-csidebar',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CsidebarComponent implements OnInit {
 
+  showContant = false;
+  @Input() loggedUser : User;
+
   constructor() { }
 
   ngOnInit() {
+  
   }
 
 }

@@ -1,9 +1,9 @@
 <div class="page">
   <div class="navigation">
-    <app-csidebar></app-csidebar>
+    <app-csidebar [loggedUser]='CurrentUser'></app-csidebar>
   </div>
   <div class="header">
-    <app-cheader></app-cheader>
+    <app-cheader (postData)='onAddPost($event)'></app-cheader>
   </div>
   <div class="main">
       <h1>award-winning strategy for whatever</h1>

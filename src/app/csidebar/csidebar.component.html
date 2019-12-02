@@ -1,7 +1,9 @@
-<img class="ui big circular image" src="https://randomuser.me/api/portraits/women/65.jpg">
-<br>
-<div class="ui label">
-  Anna Conda
+<div *ngIf = 'loggedUser !== undefined'>
+  <img class="ui big circular image" src="{{loggedUser.profileImage}}">
+  <br>
+  <div class="ui label">
+    {{loggedUser.displayName}}
+  </div>
 </div>
 <div class="ui divider"></div>
 <div class="ui tiny link list">

@@ -1,11 +1,19 @@
-<div class="ui form">
+<div class="ui form" *ngIf='!showSignOut; else signout'>
   <div class="inline fields">
     <div class="two wide field">
-      <input type="text" placeholder="Username">
+      <input type="text" placeholder="Username" id="Username" #Username>
     </div>
     <div class="two wide field">
-      <input type="text" placeholder="Password">
+      <input type="password" placeholder="Password" id="Password" #Password>
     </div>
-    <button class="ui button">Sign-In</button>
+    <button class="ui button" (click)="login(Username,Password)">Sign-In</button>
   </div>
 </div>
+
+<ng-template #signout>
+  <div class="ui form">
+    <div class="inline fields">
+      <button class="ui button">Sign-Out</button>
+    </div>
+  </div>
+</ng-template>
