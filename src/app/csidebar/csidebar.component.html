@@ -5,17 +5,12 @@
     {{loggedUser.displayName}}
   </div>
 
-  <!--  <div class="ui divider"></div>
-  <div class="ui tiny link list">
-    <a class="item">Home</a>
-    <a class="item">Product List</a>
-    <a class="item">Profile</a>
-  </div> -->
-
-      <div class="ui large vertical text menu">
-      <a [routerLink]="'/'" [routerLinkActive]="'active'" class="item">Home</a>
+  <div class="ui huge vertical text menu">
+    <nav>
+      <a [routerLink]="'/home'" [routerLinkActive]="'active'" class="item">Home</a>
       <a [routerLink]="'/products'" [routerLinkActive]="'active'" class="item">Products Listing</a>
       <a [routerLink]="'/profile'" [routerLinkActive]="'active'" class="item">Profile</a>
-    </div>
-  
+    </nav>
+  </div>
+
 </div>

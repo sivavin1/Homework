@@ -8,6 +8,7 @@ import { CheaderComponent } from './cheader/cheader.component';
 import { CsidebarComponent } from './csidebar/csidebar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductsComponent } from './products/products.component';
+import { MaincompComponent } from './maincomp/maincomp.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProductsComponent } from './products/products.component';
     CheaderComponent,
     CsidebarComponent,
     ProfileComponent,
-    ProductsComponent
+    ProductsComponent,
+    MaincompComponent
   ],
   imports: [
     BrowserModule,

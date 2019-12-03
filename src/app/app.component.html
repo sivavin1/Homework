@@ -6,8 +6,7 @@
     <app-cheader (postData)='onAddPost($event)'></app-cheader>
   </div>
   <div class="main" *ngIf= 'showWelcome; else nouser'>
-      <h1>Welcome {{CurrentUser.displayName}}</h1>
-      <app-products></app-products>
+      <router-outlet></router-outlet>
   </div>
   <ng-template #nouser>
     <div class="main">
@@ -20,4 +19,4 @@
 </div>
 
 
-<router-outlet></router-outlet>
+

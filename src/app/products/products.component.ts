@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
+import { UserServiceService } from '../user-service.service';
 
 @Component({
   selector: 'app-products',
@@ -7,7 +8,8 @@ import { ProductService } from '../product.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
+  Object: any;
   constructor(
-    public productSvc: ProductService,
+    public productSvc: ProductService, public userSvc: UserServiceService
   ) { }
 }

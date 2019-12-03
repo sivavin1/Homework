@@ -1,14 +1,8 @@
-<div *ngFor="let p of productSvc.all; let id=index" class="card">
-    <img [src]="p.url" />
-    <h2>{{p.name | uppercase}}</h2>
-    <button (click)="cartSvc.add(id, p)">
-        Lägg till
-    </button>
-    <p>
-        Passa på! <br/>
-        Idag kostar denna endast
-        <span>
-            {{p.price | currency:'SEK'}}
-        </span>
-    </p>
+<div class="ui huge relaxed list" *ngIf="productSvc.showProduct">
+  <div *ngFor="let p of productSvc.all; let id=index" class="item">
+    <img class="ui avatar image" src="{{p.image}}">
+    <div class="content">
+      {{p.name | uppercase}} - {{p.price | currency: 'SEK':'code'}}
+    </div>
+  </div>
 </div>

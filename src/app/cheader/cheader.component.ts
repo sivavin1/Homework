@@ -37,6 +37,7 @@ export class CheaderComponent implements OnInit {
 
   logout() {
     this.CurrentUserHeader = undefined;
+    this.pUserService.setUser(this.CurrentUserHeader);
     this.postData.emit(this.CurrentUserHeader);
     this.showSignOut = false;
   }
