@@ -1,13 +1,21 @@
-<div *ngIf = 'loggedUser !== undefined'>
+<div *ngIf='loggedUser !== undefined'>
   <img class="ui big circular image" src="{{loggedUser.profileImage}}">
   <br>
   <div class="ui label">
     {{loggedUser.displayName}}
   </div>
-</div>
-<div class="ui divider"></div>
-<div class="ui tiny link list">
-  <a class="item">Home</a>
-  <a class="item">Product List</a>
-  <a class="item">Profile</a>
+
+  <!--  <div class="ui divider"></div>
+  <div class="ui tiny link list">
+    <a class="item">Home</a>
+    <a class="item">Product List</a>
+    <a class="item">Profile</a>
+  </div> -->
+
+      <div class="ui large vertical text menu">
+      <a [routerLink]="'/'" [routerLinkActive]="'active'" class="item">Home</a>
+      <a [routerLink]="'/products'" [routerLinkActive]="'active'" class="item">Products Listing</a>
+      <a [routerLink]="'/profile'" [routerLinkActive]="'active'" class="item">Profile</a>
+    </div>
+  
 </div>

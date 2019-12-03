@@ -5,14 +5,19 @@
   <div class="header">
     <app-cheader (postData)='onAddPost($event)'></app-cheader>
   </div>
-  <div class="main">
-      <h1>award-winning strategy for whatever</h1>
-      <p>
-          We are the best, the brightest, the smartest,
-          yada yada...
-      </p>
+  <div class="main" *ngIf= 'showWelcome; else nouser'>
+      <h1>Welcome {{CurrentUser.displayName}}</h1>
+      <app-products></app-products>
   </div>
+  <ng-template #nouser>
+    <div class="main">
+      <h1>Welcome. Kindly login</h1>
+   </div>
+  </ng-template>
   <div class="footer">
       &copy; Tjolla-Hopp Ltd, 2019. All rights reversed.
   </div>
 </div>
+
+
+<router-outlet></router-outlet>

@@ -20,14 +20,25 @@ export class CheaderComponent implements OnInit {
   login(userName: HTMLInputElement, passWord: HTMLInputElement) {
     this.pUserService.signIn(userName.value, passWord.value)
       .subscribe(obj => {
-        this.pUserService.setUser(obj);
-        //console.log('Returned from Service', this.pUserService.currentUser);
-        this.CurrentUserHeader = this.pUserService.getUser();
-        //console.log('Got from Service', this.CurrentUserHeader);
-        this.postData.emit(this.CurrentUserHeader);
-        this.showSignOut = true;
+        console.log('Obj =', obj);
+        if (Object.keys(obj).length === 0) {
+          // console.log('undefined in header')
+          this.showSignOut = false;
+        }
+        else {
+          this.pUserService.setUser(obj);
+          this.CurrentUserHeader = this.pUserService.getUser();
+          this.postData.emit(this.CurrentUserHeader);
+          this.showSignOut = true;
+        }
       });
 
+  }
+
+  logout() {
+    this.CurrentUserHeader = undefined;
+    this.postData.emit(this.CurrentUserHeader);
+    this.showSignOut = false;
   }
 
 }

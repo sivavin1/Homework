@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CheaderComponent } from './cheader/cheader.component';
 import { CsidebarComponent } from './csidebar/csidebar.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CheaderComponent,
-    CsidebarComponent
+    CsidebarComponent,
+    ProfileComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

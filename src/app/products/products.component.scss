@@ -1,0 +1,39 @@
+:host { padding: 1em; }
+
+.card {
+    border: 1px solid #888;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+
+    img {
+        float: left;
+        border-radius: 0.25em;
+        margin-right: 1em;
+    }
+    h2 { margin: 0; color: #555; }
+    p {
+        margin: 0.5em 0;
+        span { font-weight: bold; }
+    }
+    button {
+        background-color: #28a745;
+        color: #fff;
+        border: 1px solid #1e7e34;
+        border-radius: 0.25rem;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        cursor: pointer;
+        float: right;
+    }
+}
+
+.card::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.card + .card { margin-top: 1.5rem; }
+

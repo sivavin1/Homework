@@ -1,0 +1,14 @@
+<div *ngFor="let p of productSvc.all; let id=index" class="card">
+    <img [src]="p.url" />
+    <h2>{{p.name | uppercase}}</h2>
+    <button (click)="cartSvc.add(id, p)">
+        Lägg till
+    </button>
+    <p>
+        Passa på! <br/>
+        Idag kostar denna endast
+        <span>
+            {{p.price | currency:'SEK'}}
+        </span>
+    </p>
+</div>

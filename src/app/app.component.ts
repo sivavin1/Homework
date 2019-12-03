@@ -9,13 +9,14 @@ import { User } from './user';
 })
 export class AppComponent {
   CurrentUser : User;
+  showWelcome : boolean;
   constructor(private pUserService: UserServiceService){
     //this.CurrentUser = pUserService.getUser();
   }
 
   onAddPost(postData : User){
-    this.CurrentUser = postData;
-    console.log('In OnAddPost',this.CurrentUser);
+    (postData === undefined)? this.CurrentUser = postData : (this.CurrentUser = postData[0], this.showWelcome=true);
+   // console.log('In OnAddPost',this.CurrentUser);
   }
   
 }
