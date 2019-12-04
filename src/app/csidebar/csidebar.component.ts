@@ -10,12 +10,11 @@ import { UserServiceService } from '../user-service.service';
 export class CsidebarComponent implements OnInit {
 
   showContant = false;
-  @Input() loggedUser : User;
+  @Input() loggedUser: User;
 
   constructor() { }
 
   ngOnInit() {
-  
   }
 
 }

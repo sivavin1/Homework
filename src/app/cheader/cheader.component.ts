@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { User } from '../user';
 import { UserServiceService } from '../user-service.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cheader',
@@ -12,7 +13,7 @@ export class CheaderComponent implements OnInit {
   showSignOut = false;
   CurrentUserHeader: User;
 
-  constructor(private pUserService: UserServiceService) { }
+  constructor(private pUserService: UserServiceService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
   }
@@ -40,6 +41,7 @@ export class CheaderComponent implements OnInit {
     this.pUserService.setUser(this.CurrentUserHeader);
     this.postData.emit(this.CurrentUserHeader);
     this.showSignOut = false;
+    this.router.navigate(['']);
   }
 
 }

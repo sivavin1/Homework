@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { UserServiceService } from '../user-service.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { User } from '../user';
 
 @Component({
   selector: 'app-products',
@@ -8,8 +10,9 @@ import { UserServiceService } from '../user-service.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-  Object: any;
+  CurrentUserHeader: User;
+
   constructor(
     public productSvc: ProductService, public userSvc: UserServiceService
-  ) { }
+  ) {}
 }

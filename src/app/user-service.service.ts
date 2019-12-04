@@ -29,6 +29,16 @@ export class UserServiceService {
       );
   }
 
+  signInUser(Iusername: string): Observable<User> {
+    return this.http
+      .get<User>(`${this.DBUrl}?username=${Iusername}`)
+      .pipe(
+        // tslint:disable-next-line: no-console
+        tap(objs => console.debug('Object', objs)),
+        take(1)
+      );
+  }
+
   setUser(pUser : object){
     //this.currentUser = pUser;
     this.currentUser=Object.assign(new User(), pUser);

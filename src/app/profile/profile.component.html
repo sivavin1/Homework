@@ -1,1 +1,7 @@
-<p>profile works!</p>
+<div class="card" *ngIf='CurrentUserHeader !== undefined'>
+    <img src="{{CurrentUserHeader[0].profileImage}}" style="width:20%">
+    <h1> {{CurrentUserHeader[0].displayName}} </h1>
+    <p>Age : {{CurrentUserHeader[0].age}} </p>
+    <p>Gender : {{CurrentUserHeader[0].gender}} </p>
+    <p>Birthdate : {{CurrentUserHeader[0].birthday | date}} </p>
+  </div>
